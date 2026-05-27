@@ -91,7 +91,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4.5 h-4.5 text-orange shrink-0 mt-0.5" />
                 <span className="text-slate-800 leading-snug font-semibold">
-                  123, Business Hub, Sector 5, Noida, Uttar Pradesh - 201301
+                  House no 1, 1st floor, BLK-B-5 PKT 3, SEC 34, Utsav Residency, North West Delhi, Delhi 110042
                 </span>
               </li>
             </ul>

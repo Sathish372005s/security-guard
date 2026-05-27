@@ -2,25 +2,122 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #0f1d33; /* Deep navy blue for high readability */
+  
+  --primary-dark: #ffffff; /* White background */
+  --primary-navy: #0f1d33; /* Deep navy blue */
+  --card-bg: #f8fafc; /* Elegant off-white (steel light) background for cards */
+  
+  /* Brand Colors */
+  --brand-navy: #0f1d33;
+  --brand-navy-dark: #070e1b;
+  
+  /* Orange Accent */
+  --brand-orange: #ff6f00;
+  --brand-orange-light: #ff9100;
+  --brand-orange-dark: #e65100;
+  
+  /* Steel Gray */
+  --steel-gray: #64748b;
+  --steel-gray-light: #f1f5f9; /* Super light steel gray for borders */
+  --steel-gray-dark: #334155;  /* Darker steel gray for secondary text */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@theme {
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-navy: var(--primary-navy);
+  --color-card-bg: var(--card-bg);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-navy-dark: var(--brand-navy-dark);
+  
+  --color-orange: var(--brand-orange);
+  --color-orange-light: var(--brand-orange-light);
+  --color-orange-dark: var(--brand-orange-dark);
+  
+  --color-steel: var(--steel-gray);
+  --color-steel-light: var(--steel-gray-light);
+  --color-steel-dark: var(--steel-gray-dark);
+  
+  --font-display: 'Outfit', 'Geist', 'Inter', sans-serif;
+  --font-sans: 'Geist', 'Inter', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Custom Premium Utilities */
+@layer utilities {
+  .bg-grid-pattern {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(15, 29, 51, 0.02) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(15, 29, 51, 0.02) 1px, transparent 1px);
+  }
+  
+  .glassmorphism {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(15, 29, 51, 0.08);
+  }
+
+  .glassmorphism-light {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(15, 29, 51, 0.08);
+  }
+
+  .orange-glow {
+    box-shadow: 0 4px 20px rgba(255, 111, 0, 0.12);
+  }
+
+  .orange-glow-hover:hover {
+    box-shadow: 0 6px 25px rgba(255, 111, 0, 0.22);
+  }
+
+  .text-shadow-orange {
+    text-shadow: 0 0 8px rgba(255, 111, 0, 0.15);
   }
 }
 
-body {
-  background: var(--background);
+/* Base resets & animations */
+html, body {
+  scroll-behavior: smooth;
+  background-color: var(--primary-dark);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+  border: 2px solid #f1f5f9;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-orange);
+}
+
+/* Selection Highlight */
+::selection {
+  background-color: rgba(255, 111, 0, 0.15);
+  color: var(--foreground);
+}
+
+/* Floating Orange Particle Effect */
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); opacity: 0.15; }
+  50% { transform: translateY(-10px) rotate(180deg); opacity: 0.35; }
+  100% { transform: translateY(0px) rotate(360deg); opacity: 0.15; }
+}
+
+.animate-float-slow {
+  animation: float 8s ease-in-out infinite;
+}
+.animate-float-fast {
+  animation: float 4s ease-in-out infinite;
 }

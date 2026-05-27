@@ -331,7 +331,7 @@ export default function ContactPage() {
                     <div className="flex flex-col">
                       <span className="text-[10px] text-slate-400 uppercase tracking-widest font-extrabold">Corporate Headquarters</span>
                       <span className="text-slate-200 leading-relaxed mt-0.5 font-semibold text-sm">
-                        123, Business Hub, Sector 5, Noida, Uttar Pradesh - 201301
+                        House no 1, 1st floor, BLK-B-5 PKT 3, SEC 34, Utsav Residency, North West Delhi, Delhi 110042
                       </span>
                     </div>
                   </li>

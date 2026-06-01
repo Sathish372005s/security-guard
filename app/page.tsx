@@ -222,12 +222,12 @@ export default function HomePage() {
             >
               {/* Premium security guard photograph frame */}
               <div className="relative w-full max-w-[340px] aspect-[4/5] rounded-2xl overflow-hidden border border-slate-200 shadow-lg group">
-                <Image
-                  src="/security-guard.png"
+                <img
+                  src="sec.jpeg"
                   alt="CORE SHIELD Elite Security Officer"
-                  fill
+                  
                   sizes="(max-w-768px) 100vw, 340px"
-                  priority
+  
                   className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
                 />
                 

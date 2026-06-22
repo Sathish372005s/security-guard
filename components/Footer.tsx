@@ -70,16 +70,16 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <Phone className="w-4.5 h-4.5 text-orange shrink-0 mt-0.5" />
                 <div className="flex flex-col">
-                  <a href="tel:8368351578" className="text-slate-800 hover:text-orange transition-colors font-bold">
-                    +91 83683 51578
+                  <a href="tel:+918796636150" className="text-slate-800 hover:text-orange transition-colors font-bold">
+                    +91 87966 36150
                   </a>
                   <span className="text-[10px] text-slate-400 uppercase font-semibold">24/7 Operations Command</span>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-4.5 h-4.5 text-orange shrink-0 mt-0.5" />
-                <a href="mailto:coreshieldservice@gmail.com" className="text-slate-800 hover:text-orange transition-colors font-semibold break-all">
-                  coreshieldservice@gmail.com
+                <a href="mailto:Info@faithgloballogistics.in" className="text-slate-800 hover:text-orange transition-colors font-semibold break-all">
+                  Info@faithgloballogistics.in
                 </a>
               </li>
               <li className="flex items-start gap-3">

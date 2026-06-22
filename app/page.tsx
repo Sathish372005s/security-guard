@@ -521,10 +521,10 @@ export default function HomePage() {
               Request A Protection Quote
             </Link>
             <a
-              href="tel:8368351578"
+              href="tel:+918796636150"
               className="px-8 py-4 bg-white border border-slate-300 hover:border-orange hover:text-orange text-slate-700 font-bold uppercase tracking-wider text-xs rounded-md transition-colors flex items-center justify-center gap-2 shadow-sm"
             >
-              Call HQ +91 83683 51578
+              Call HQ +91 87966 36150
             </a>
           </div>
         </div>

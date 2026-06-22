@@ -155,7 +155,7 @@ export async function POST(req: Request) {
     if (!emailUser || !emailPass || !receiverEmail) {
       console.warn("WARNING: SMTP credentials not fully configured in environment variables.");
       console.log("=== MOCK EMAIL LOG ===");
-      console.log(`To: ${receiverEmail || "coreshieldservice@gmail.com"}`);
+      console.log(`To: ${receiverEmail || "Info@faithgloballogistics.in"}`);
       console.log(`Subject: New Security Service Inquiry - ${service}`);
       console.log(`Content:\nName: ${name}\nEmail: ${email}\nPhone: ${phone}\nService: ${service}\nMessage: ${message}`);
       console.log("======================");

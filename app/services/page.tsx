@@ -247,10 +247,10 @@ export default function ServicesPage() {
             Our tactical team is equipped to deploy trained manpower and site setup parameters within 24-48 hours across Delhi, Noida, Gurgaon, Haryana, and Punjab.
           </p>
           <a
-            href="tel:8368351578"
+            href="tel:+918796636150"
             className="mt-2 text-2xl md:text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-light via-orange to-orange-dark tracking-wider hover:scale-[1.02] transition-transform flex items-center gap-2"
           >
-            +91 83683 51578
+            +91 87966 36150
           </a>
         </div>
       </section>

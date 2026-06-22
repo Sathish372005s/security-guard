@@ -72,11 +72,11 @@ export default function Header() {
           {/* Contact / CTA Button */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:8368351578"
+              href="tel:+918796636150"
               className="flex items-center gap-2 text-sm text-slate-600 hover:text-orange transition-colors font-semibold"
             >
               <PhoneCall className="w-4 h-4 text-orange" />
-              <span>+91 83683 51578</span>
+              <span>+91 87966 36150</span>
             </a>
             <Link
               href="/contact"
@@ -91,7 +91,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <div className="flex md:hidden items-center gap-4">
             <a
-              href="tel:8368351578"
+              href="tel:+918796636150"
               className="flex items-center justify-center w-9 h-9 rounded-full bg-orange/10 border border-orange/30 text-orange hover:bg-orange hover:text-white transition-all"
             >
               <PhoneCall className="w-4 h-4" />
@@ -140,10 +140,10 @@ export default function Header() {
                 Direct Emergency Line
               </span>
               <a
-                href="tel:8368351578"
+                href="tel:+918796636150"
                 className="text-lg font-bold text-brand-navy tracking-wider hover:text-orange transition-colors flex items-center gap-2"
               >
-                +91 83683 51578
+                +91 87966 36150
               </a>
               <span className="text-[10px] text-slate-500">
                 24/7 Rapid Response Coordination Team

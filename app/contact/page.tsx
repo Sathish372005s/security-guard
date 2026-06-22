@@ -168,7 +168,7 @@ function ContactFormContent() {
             required
             value={formData.phone}
             onChange={handleChange}
-            placeholder="e.g. 8368351578"
+            placeholder="e.g. +91 87966 36150"
             className="bg-slate-50 border border-slate-200 focus:border-orange/70 focus:bg-white rounded-lg p-3.5 text-sm text-brand-navy placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-orange/15 transition-all w-full font-medium"
           />
         </div>
@@ -306,8 +306,8 @@ export default function ContactPage() {
                     </div>
                     <div className="flex flex-col">
                       <span className="text-[10px] text-slate-400 uppercase tracking-widest font-extrabold">24/7 Operations Desk</span>
-                      <a href="tel:8368351578" className="text-white hover:text-orange-light font-black text-lg tracking-wider mt-0.5 transition-colors">
-                        +91 83683 51578
+                      <a href="tel:+918796636150" className="text-white hover:text-orange-light font-black text-lg tracking-wider mt-0.5 transition-colors">
+                        +91 87966 36150
                       </a>
                     </div>
                   </li>
@@ -318,8 +318,8 @@ export default function ContactPage() {
                     </div>
                     <div className="flex flex-col">
                       <span className="text-[10px] text-slate-400 uppercase tracking-widest font-extrabold">Email Registry</span>
-                      <a href="mailto:coreshieldservice@gmail.com" className="text-slate-100 hover:text-orange-light font-bold mt-0.5 transition-colors break-all">
-                        coreshieldservice@gmail.com
+                      <a href="mailto:Info@faithgloballogistics.in" className="text-slate-100 hover:text-orange-light font-bold mt-0.5 transition-colors break-all">
+                        Info@faithgloballogistics.in
                       </a>
                     </div>
                   </li>

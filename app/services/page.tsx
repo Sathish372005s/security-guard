@@ -7,6 +7,7 @@ import {
   Factory, 
   Lock, 
   Eye,
+  Briefcase,
   ArrowRight,
   ShieldCheck,
   Check
@@ -104,6 +105,21 @@ const allServices = [
     bgSlug: "Smart CCTV Command Center"
   },
   {
+    id: "hr-services",
+    title: "HR Services",
+    icon: Briefcase,
+    image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=600&auto=format&fit=crop",
+    shortDesc: "Strategic workforce partnering with manpower deployment, documentation support, payroll coordination, and long-term HR collaboration.",
+    fullDesc: "We are not just a labour supplier. Our goal is to become a reliable workforce partner for companies. We provide manpower across different categories based on the client's requirements, including construction labour, skilled technicians, engineers, supervisors, logistics staff, drivers, guards, housekeeping, office support, and HR professionals.",
+    bullets: [
+      "Timely manpower supply across diverse categories",
+      "Attendance coordination and payroll support",
+      "Proper documentation and compliance guidance",
+      "Long-term workforce partnership, not one-off hiring"
+    ],
+    bgSlug: "Workforce & HR Partnership"
+  },
+  {
   id: "quality-audit-services",
   title: "Quality Check & Audit Services",
   icon: ShieldCheck,
@@ -137,11 +153,11 @@ export default function ServicesPage() {
             Elite Security Portfolio
           </span>
           <h1 className="font-display text-4xl sm:text-5xl font-black uppercase text-white tracking-wide">
-            Our Security Services
+            Our Services
           </h1>
           <div className="h-[2px] bg-gradient-to-r from-transparent via-orange to-transparent w-40 mx-auto mt-4" />
           <p className="text-steel-light text-sm sm:text-base max-w-xl mx-auto mt-4 leading-relaxed">
-            From premier physical manpower to integrated remote CCTV surveillance networks, explore our 6 core security disciplines built to protect your high-value assets.
+            From premier manpower deployment to integrated security and HR support, explore our 7 core service disciplines built to protect your high-value operations.
           </p>
         </div>
       </section>
